@@ -18,6 +18,8 @@ Scrapes the Taco Bell menu and returns as a PANDAS dataframe as such:
 
 ## Example usage
 ```python
+from tbms import TBMenuScraper
+
 tbms = TBMenuScraper()
 df = tbms.scrape_all()
 ```
