@@ -32,7 +32,7 @@ class TBMenuScraper:
         page = requests.get("https://www.tacobell.com/food", headers=self.agent)
         soup = BeautifulSoup(page.content, "html.parser")
 
-        tiles = soup.find_all("div", class_=re.compile("menu-tile___3x64l menu-tile___weSh0"))
+        tiles = soup.find_all("div", class_=re.compile("menu-tile___3x64l menu-tile.*"))
         for tile in tiles:
             link = tile.find("a")
             yield "https://tacobell.com" + link.get("href")
