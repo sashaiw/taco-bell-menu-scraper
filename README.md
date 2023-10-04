@@ -2,18 +2,18 @@
 Scrapes the Taco Bell menu and returns as a PANDAS dataframe as such:
 
 ```
-                                       name  price       calories
-0                  Chipotle Cheddar Chalupa  $3.59        420 Cal
-1     Chipotle Cheddar Chalupa - Black Bean  $3.59        400 Cal
-2            Chipotle Cheddar Chalupa Combo  $7.59  1000-1420 Cal
-3                      Black Bean Soft Taco  $1.39        170 Cal
-4                   Veggie Burrito Supreme®  $3.89        320 Cal
-..                                      ...    ...            ...
-188  Grande Toasted Breakfast Burrito Steak  $3.69        560 Cal
-189        Grande Toasted Breakfast Burrito  $2.99        560 Cal
-191                    Breakfast Crunchwrap  $2.99        670 Cal
-198  Mountain Dew® Kickstart™ Orange Citrus  $2.29     70-130 Cal
-199                         Breakfast Salsa  $0.00          0 Cal
+                                          name  price  min_cals  max_cals
+0    Shredded Beef Grilled Cheese Dipping Taco   3.69     360.0     360.0
+1                                    Soft Taco   1.79     180.0     180.0
+2                           Soft Taco Supreme®   2.69     210.0     210.0
+3                       Spicy Potato Soft Taco   1.00     240.0     240.0
+4                                 Crunchy Taco   1.79     170.0     170.0
+..                                         ...    ...       ...       ...
+203                 Breakfast Crunchwrap Bacon   3.79     670.0     670.0
+204               Breakfast Crunchwrap Sausage   3.79     760.0     760.0
+205                 Breakfast Crunchwrap Combo   5.99     840.0    1120.0
+206                                 Hash Brown   1.49     160.0     160.0
+213                            Breakfast Salsa   0.00       0.0       0.0
 ```
 
 ## Example usage
